@@ -6,7 +6,7 @@ public class Test {
 		Locker Donald = new Locker(35,16,27,0,275,"Donald Duck");
 		
 		Mickey.openLocker(); // adds books in locker
-		for (int i=0; i<3; i++){
+		for (int i=0; i<3; i++) {
 			Mickey.putBookInLocker();
 		}
 		

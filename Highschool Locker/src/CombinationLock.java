@@ -1,12 +1,12 @@
 public class CombinationLock {
 	
-	private int dial=0; // initialize variables
+	private int dial = 0; // initialize variables
 	private int num1;
 	private int num2;
 	private int num3;
 	
 	
-	public CombinationLock(){
+	public CombinationLock() {
 	}
 	
 	public CombinationLock(int num1,int num2,int num3) { // declares variable values
@@ -20,7 +20,7 @@ public class CombinationLock {
 		dial = 0;
 	}
 	
-	public int turnRight(int Ticks){ // right turn dial
+	public int turnRight(int Ticks) { // right turn dial
 		if (dial + Ticks > 39){
 			dial = dial + Ticks - 40;
 		}
@@ -30,7 +30,7 @@ public class CombinationLock {
 		return dial;
 	}
 	
-	public int turnLeft(int Ticks){ // left turn dial
+	public int turnLeft(int Ticks) { // left turn dial
 		if (dial>Ticks){
 			dial = dial - Ticks;
 		}
@@ -40,7 +40,7 @@ public class CombinationLock {
 		return dial;
 	}
 		
-	public boolean openLock(int dial1, int dial2,int dial3){ // opens the locker
+	public boolean openLock(int dial1, int dial2,int dial3) { // opens the locker
 		if ((num1 == dial1) && (num2 == dial2) && (num3 == dial3)){
 			return true;	
 		}

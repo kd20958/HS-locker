@@ -9,7 +9,7 @@ public class Locker {
 	private int num2;
 	private int num3;
 	
-	public Locker(int num1, int num2,int num3,int Books,int lockNumber, String Name){
+	public Locker(int num1, int num2,int num3,int Books,int lockNumber, String Name) {
 		
 		this.Name = Name; // declares variable values
 		this.Books = Books;
@@ -26,7 +26,7 @@ public class Locker {
 		Books++;
 	}
 	
-	public boolean removeBookFromLocker(){ // remove book method
+	public boolean removeBookFromLocker() { // remove book method
 		
 		if (Books >= 1){
 			Books--;
@@ -37,14 +37,14 @@ public class Locker {
 		}
 	}
 	
-	public void openLocker(){ // open locker method
+	public void openLocker() { // open locker method
 		
 		System.out.println("Enter three numbers to open the lock.");
 		Scanner keyboard = new Scanner(System.in); // reads input
 		int dial1= keyboard.nextInt(); // stores inputs
 		int dial2= keyboard.nextInt(); 
 		int dial3= keyboard.nextInt();
-		if (combolock.openLock(dial1, dial2, dial3)){
+		if (combolock.openLock(dial1, dial2, dial3)) {
 			
 			System.out.println("The lock is opened.");
 		}
