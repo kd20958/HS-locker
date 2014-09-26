@@ -2,8 +2,6 @@ import java.util.Scanner;
 
 public class Locker {	
 	
-	public Locker(){
-	}
 	private String Name;
 	private int Books;
 	private int lockNumber;
