@@ -22,7 +22,7 @@ public class CombinationLock {
 	
 	public int turnRight(int Ticks){ // right turn dial
 		if (dial + Ticks > 39){
-			dial = dial + Ticks-40;
+			dial = dial + Ticks - 40;
 		}
 		else {
 			dial = dial + Ticks;

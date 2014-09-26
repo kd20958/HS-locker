@@ -28,7 +28,7 @@ public class Locker {
 	
 	public boolean removeBookFromLocker(){ // remove book method
 		
-		if (Books>=1){
+		if (Books >= 1){
 			Books--;
 			return true;
 		}
